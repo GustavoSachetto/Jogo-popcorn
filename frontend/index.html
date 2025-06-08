@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public, must-revalidate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo inspirado no celebrating popcorn do google doodle">
+    <meta name="author" content="Gustavo Sachetto da Cruz">
+    <meta name="keywords" content="celebrating popcorn, popcorn, jogo pipoca, gustavo sachetto, sachetto">
+    <meta name="robots" content="index,follow">
+    <meta name="og:region" content="Brasil">
+    <meta name="pt-br" content="content-language">
+    
+    <title>Celebrating Popcorn</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/main.css" media="all" defer>
+    <script type="module" src="/assets/js/main.js" defer></script>
+</head>
+<body>
+    <article class="tela mostrar"  id="telaInicio">
+        <h1 class="tela__titulo">Celebrating Popcorn</h1>
+        <img src="/assets/img/tela/capa.webp" width="200" height="167" class="tela__imagem" alt="Capa do jogo">
+        <nav class="tela__container" id="navegacaoInicio" aria-label="navegacao tela inicio">
+            <button class="tela__botao" id="botaoComecar">Começar</button>
+            <button class="tela__botao" id="botaoRegras">Regras</button>
+            <button class="tela__botao" id="botaoPlacarInicio">Placar</button>
+        </nav>
+    </article>
+
+    <article class="tela" id="telaFinal">
+        <h1 class="tela__titulo" id="mensagemResultado">Parabéns você ganhou!</h1>
+        <h2 class="tela__subtitulo">Obrigado por jogar.</h2>
+        <input type="text" class="tela__input" maxlength="60" placeholder="Insira seu nome">
+        <nav class="tela__container" id="navegacaoFinal" aria-label="navegacao tela final">
+            <button class="tela__botao" id="botaoRecomecar">Recomecar</button>
+            <button class="tela__botao" id="botaoPlacarFinal">Placar</button>
+        </nav>
+    </article>
+
+    <article class="tela__modal" id="modalRegras">
+        <h1 class="tela__titulo">Regras</h1>
+        <div class="tela__container">
+            <p class="tela__texto">
+                Seu objetivo no jogo é sobreviver por 60 segundos sem que as bolas de manteiga atinjam seu personagem (a pipoca), para isto você terá até 2 tentativas / vidas. Para se mover, utilize as setas ou W, A, S, D no teclado. O monstro lançará as bolas de manteiga após um determinado tempo, em sentidos aleatórios. Acima de tudo, divirta-se e boa sorte!
+            </p>
+            <p class="tela__texto">
+                Para armazenar seus resultados no placar, digite seu nome no final do jogo e pressione um dos botões disponíveis na tela. O placar exibirá os 5 primeiros colocados que conseguirem ganhar o jogo em ordem de chegada. Qualquer resultado posterior não será exibido entre os top 5 no placar, mas será armazenado sem nenhum problema na base de dados.
+            </p>
+        </div>
+        <button class="tela__botao tela__botao--voltar" id="botaoVoltarRegras">Voltar</button>
+    </article>
+
+    <article class="temporizador" id="temporizador">
+        <section class="temporizador__caixa">
+            <span class="temporizador__caixa__tempo" id="tempoEmMinutos">0:60</span>
+        </section>
+    </article>
+
+    <article class="tela__modal" id="modalPlacar">
+        <h1 class="tela__titulo">Placar</h1>
+        <ul class="tela__placar"></ul>
+        <button class="tela__botao tela__botao--voltar" id="botaoVoltarPlacar">Voltar</button>
+    </article>
+
+    <canvas id="jogo" class="jogo" width="500" height="500"></canvas>
+</body>
+</html>

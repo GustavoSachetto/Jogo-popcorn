@@ -1,0 +1,51 @@
+.temporizador {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: var(--altura-fixa);
+    min-width: var(--largura-minima);
+    max-width: var(--largura-maxima);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.temporizador__caixa {
+    width: 9rem;
+    height: 2.5rem;
+    bottom: 16px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--cor-neutra-escura);
+}
+
+.temporizador__caixa__tempo {
+    color: var(--cor-neutra-clara);
+    font: 400 1.8rem var(--fonte-padrao);
+}
+
+.temporizador__caixa__tempo--piscar {
+    animation: 0.8s piscar__tempo--animacao ease-in-out infinite;
+}
+
+@keyframes piscar__tempo--animacao {
+    0%, 100% {
+        color: var(--cor-temporizador);
+    } 50% {
+        color: var(--cor-neutra-clara);
+    }
+}
+
+@media (max-height: 500px) {
+    .temporizador {
+        margin: 0 auto;
+    }
+}

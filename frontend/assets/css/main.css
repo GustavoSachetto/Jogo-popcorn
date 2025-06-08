@@ -1,0 +1,7 @@
+@import url(base/_reset.css);
+@import url(base/_fontes.css);
+@import url(base/_variaveis.css);
+
+@import url(componentes/_tela.css);
+@import url(componentes/_jogo.css);
+@import url(componentes/_temporizador.css);

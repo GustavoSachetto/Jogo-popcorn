@@ -1,0 +1,12 @@
+.jogo {
+    width: 100%;
+    height: var(--altura-fixa);
+    min-height: var(--altura-fixa);
+    min-width: var(--largura-minima);
+    max-width: var(--largura-maxima);
+    background-color: var(--cor-neutra-escura);   
+}
+
+.mostrar {
+    visibility: visible !important;
+}

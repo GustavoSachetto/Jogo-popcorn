@@ -1,0 +1,17 @@
+:root {
+    --altura-fixa: 500px;
+    --largura-minima: 250px;
+    --largura-maxima: 500px;
+
+    --cor-principal: #ce733e;
+    --cor-secundaria: #693612;
+    --cor-terciaria: #f5e0a3;
+    --cor-quaternaria: #d18d60;
+    --cor-neutra-escura: black;
+    --cor-neutra-clara: white;
+    --cor-temporizador: red;
+
+    --transicao-padrao: 170ms ease-in-out;
+
+    --fonte-padrao: 'Patrick Hand', Arial, Helvetica, sans-serif;
+}

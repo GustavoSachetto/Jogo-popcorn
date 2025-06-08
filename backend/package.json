@@ -1,0 +1,21 @@
+{
+  "name": "jogo-popcorn-api",
+  "version": "1.0.0",
+  "description": "Api responsável pelo cadastro e consulta de placar e estatisticas do jogo popcorn no banco de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.magnasistemas.com.br/treinamento/projetos_frontend/projeto_jogos/gustavo_sachetto/jogo-popcorn-api.git"
+  },
+  "keywords": ["jogo-popcorn, popcorn-api, popcorn, api"],
+  "author": "Gustavo Sachetto da Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.0"
+  }
+}
